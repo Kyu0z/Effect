@@ -1,15 +1,18 @@
-import Layout from "@/components/Layout";
-import Image from "next/image";
+import Users from "@/pages/users";
+import Link from "next/link";
 
 export default function Home() {
   return (
-    <>
-      <Layout>
-        <div>
-          <h1>Home Page</h1>
-          {/* Your content here */}
-        </div>
-      </Layout>
-    </>
+    <ul>
+      <li>
+        <Link href="/">Home</Link>
+      </li>
+      <li>
+        <Link href="/dashboard">Dashboard</Link>
+      </li>
+      <li>
+        <Link href="/users">Users</Link>
+      </li>
+    </ul>
   );
 }
